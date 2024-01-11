@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  main {
+    display: flex;
+    background-color: rgb(238, 238, 162);
+  }
+  main > section {
+    width: 50%;
+    padding: 50px;
+  }
+  ul {
+    list-style: none;
+    padding: none;
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url("../images/Done_ring_round_fill.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+  }
+  .reviewers {
+    display: flex;
+    align-items: center;
+  }
+  .reviewers img {
+    background: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  .reviewed {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .reviewed > div {
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  .reviewed > div:nth-child(2n + 1) {
+    margin-left: auto;
+  }
+  .icon {
+    width: 40%;
+  }
+  .top {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .reviews > img {
+    width: 20%;
+  }
+  @media screen and (max-width: 500px) {
+    main {
+      padding: 50px 0;
+      flex-direction: column;
+    }
+    main > section {
+      width: auto;
+      padding: 10px;
+    }
+  }
+  
