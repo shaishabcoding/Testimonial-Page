@@ -13,7 +13,7 @@ main > section {
 }
 ul {
   list-style: none;
-  padding: none;
+  padding: 0;
 }
 li::before {
   content: "";
